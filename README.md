@@ -79,6 +79,7 @@ interface AnotherInterface {}
 
 class AnotherClass {}
 
+# Lossless Semantic Tree Representation
 
 J.CompilationUnit
     |--- J.PackageDeclaration (com.example)
