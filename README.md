@@ -1,7 +1,5 @@
-# Code Representation Comparison
-
-## Java Code
-
+# Code and LST Reference
+## Java Representation
 ```java
 package com.example;
 import org.springframework.stereotype.Controller;
@@ -81,7 +79,7 @@ class AnotherClass {}
 
 # Lossless Semantic Tree Representation
 
-```
+```lua
 J.CompilationUnit
     |--- J.PackageDeclaration (com.example)
     |--- J.Import (org.springframework.stereotype.Controller)
