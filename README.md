@@ -91,7 +91,7 @@
             }
             List.of(1,2,3).forEach(System.out::println);
         }
-    
+
         public enum InnerEnum {
             VALUE1, VALUE2
         }
