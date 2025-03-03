@@ -1,4 +1,37 @@
 # Code and Lossless Semantic Tree(LST) Reference
+## Lossless Semantic Tree Representation
+
+```lua
+J.CompilationUnit
+    |--- J.PackageDeclaration (com.example)
+    |--- J.Import (org.springframework.stereotype.Controller)
+    |--- J.Import (java.util.List)
+    |--- J.ClassDeclaration (Example)
+    |   |--- J.Modifiers (@Controller, public)
+    |   |--- J.Identifier (Example)
+    |   |--- J.TypeParameters (<T>)
+    |   |--- J.Implements (MyInterface)
+    |   |--- J.VariableDeclarations (private int field)
+    |   |--- J.Block (static initializer)
+    |   |--- J.Block (instance initializer)
+    |   |--- J.MethodDeclaration (constructor)
+    |   |--- J.MethodDeclaration (genericMethod)
+    |   |--- J.MethodDeclaration (exampleMethod)
+    |   |   |--- J.VariableDeclarations (int localVariable)
+    |   |   |--- J.If
+    |   |   |--- J.Try
+    |   |   |--- J.ForLoop
+    |   |   |--- J.WhileLoop
+    |   |   |--- J.DoWhileLoop
+    |   |   |--- J.Switch
+    |   |   |--- J.MethodInvocation (forEach)
+    |   |--- J.ClassDeclaration (InnerEnum)
+    |   |--- J.ClassDeclaration (InnerInterface)
+    |   |--- J.ClassDeclaration (InnerClass)
+    |   |--- J.ClassDeclaration (MyFunctionalInterface)
+    |--- J.InterfaceDeclaration (AnotherInterface)
+    |--- J.ClassDeclaration (AnotherClass)
+```
 ## Java Representation
 ```java
 package com.example;
@@ -75,38 +108,4 @@ public class Example<T> implements MyInterface {
 
 interface AnotherInterface {}
 class AnotherClass {}
-```
-
-## Lossless Semantic Tree Representation
-
-```lua
-J.CompilationUnit
-    |--- J.PackageDeclaration (com.example)
-    |--- J.Import (org.springframework.stereotype.Controller)
-    |--- J.Import (java.util.List)
-    |--- J.ClassDeclaration (Example)
-    |   |--- J.Modifiers (@Controller, public)
-    |   |--- J.Identifier (Example)
-    |   |--- J.TypeParameters (<T>)
-    |   |--- J.Implements (MyInterface)
-    |   |--- J.VariableDeclarations (private int field)
-    |   |--- J.Block (static initializer)
-    |   |--- J.Block (instance initializer)
-    |   |--- J.MethodDeclaration (constructor)
-    |   |--- J.MethodDeclaration (genericMethod)
-    |   |--- J.MethodDeclaration (exampleMethod)
-    |   |   |--- J.VariableDeclarations (int localVariable)
-    |   |   |--- J.If
-    |   |   |--- J.Try
-    |   |   |--- J.ForLoop
-    |   |   |--- J.WhileLoop
-    |   |   |--- J.DoWhileLoop
-    |   |   |--- J.Switch
-    |   |   |--- J.MethodInvocation (forEach)
-    |   |--- J.ClassDeclaration (InnerEnum)
-    |   |--- J.ClassDeclaration (InnerInterface)
-    |   |--- J.ClassDeclaration (InnerClass)
-    |   |--- J.ClassDeclaration (MyFunctionalInterface)
-    |--- J.InterfaceDeclaration (AnotherInterface)
-    |--- J.ClassDeclaration (AnotherClass)
 ```
