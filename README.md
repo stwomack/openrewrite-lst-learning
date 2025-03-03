@@ -1,6 +1,9 @@
 # Code and Lossless Semantic Tree (LST) Reference
 ## Lossless Semantic Tree Representation
 
+![Part1](/slide1.png)
+![Part1](/slide2.png)
+
 ```lua
 J.CompilationUnit
     |--- J.PackageDeclaration (com.example)
