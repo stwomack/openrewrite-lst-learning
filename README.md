@@ -1,7 +1,10 @@
 # Code and Lossless Semantic Tree (LST) Reference
-## Lossless Semantic Tree Representation
 
-```lua
+<table>
+  <tr>
+    <td>
+      <h2>Lossless Semantic Tree Representation</h2>
+      <pre>
 J.CompilationUnit
     |--- J.PackageDeclaration (com.example)
     |--- J.Import (org.springframework.stereotype.Controller)
@@ -31,9 +34,11 @@ J.CompilationUnit
     |   |--- J.ClassDeclaration (MyFunctionalInterface)
     |--- J.InterfaceDeclaration (AnotherInterface)
     |--- J.ClassDeclaration (AnotherClass)
-```
-## Java Representation
-```java
+      </pre>
+    </td>
+    <td>
+      <h2>Java Representation</h2>
+      <pre>
 package com.example;
 import org.springframework.stereotype.Controller;
 
@@ -41,7 +46,7 @@ import java.util.List;
 
 @Controller
 public class Example<T> implements MyInterface {
-    private int field;
+private int field;
 
     static {
         System.out.println("Static initialization");
@@ -108,4 +113,7 @@ public class Example<T> implements MyInterface {
 
 interface AnotherInterface {}
 class AnotherClass {}
-```
+</pre>
+</td>
+  </tr>
+</table>
