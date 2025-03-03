@@ -81,6 +81,7 @@ class AnotherClass {}
 
 # Lossless Semantic Tree Representation
 
+```
 J.CompilationUnit
     |--- J.PackageDeclaration (com.example)
     |--- J.Import (org.springframework.stereotype.Controller)
@@ -110,3 +111,4 @@ J.CompilationUnit
     |   |--- J.ClassDeclaration (MyFunctionalInterface)
     |--- J.InterfaceDeclaration (AnotherInterface)
     |--- J.ClassDeclaration (AnotherClass)
+```
