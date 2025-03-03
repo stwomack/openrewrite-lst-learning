@@ -1,4 +1,4 @@
-# Code and Lossless Semantic Tree(LST) Reference
+# Code and Lossless Semantic Tree (LST) Reference
 ## Lossless Semantic Tree Representation
 
 ```lua
