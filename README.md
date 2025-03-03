@@ -2,6 +2,7 @@
 
 This document presents a Java class alongside its corresponding structured representation.
 
+```markdown
 | Java Code | Structured Representation |
 |-----------|---------------------------|
 | ```java  |
@@ -80,7 +81,7 @@ This document presents a Java class alongside its corresponding structured repre
 | interface AnotherInterface {}  |
 |  |
 | class AnotherClass {}  |
-| ``` | ```  |
+| ``` | 
 | J.CompilationUnit  |
 |     |--- J.PackageDeclaration (com.example)  |
 |     |--- J.Import (org.springframework.stereotype.Controller)  |
@@ -110,4 +111,3 @@ This document presents a Java class alongside its corresponding structured repre
 |     |   |--- J.ClassDeclaration (MyFunctionalInterface)  |
 |     |--- J.InterfaceDeclaration (AnotherInterface)  |
 |     |--- J.ClassDeclaration (AnotherClass)  |
-| ``` |
