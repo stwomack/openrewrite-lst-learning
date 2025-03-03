@@ -76,8 +76,8 @@ public class Example<T> implements MyInterface {
 }
 
 interface AnotherInterface {}
-
 class AnotherClass {}
+```
 
 # Lossless Semantic Tree Representation
 
