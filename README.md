@@ -1,4 +1,4 @@
-# Code and LST Reference
+# Code and Lossless Semantic Tree(LST) Reference
 ## Java Representation
 ```java
 package com.example;
@@ -77,7 +77,7 @@ interface AnotherInterface {}
 class AnotherClass {}
 ```
 
-# Lossless Semantic Tree Representation
+## Lossless Semantic Tree Representation
 
 ```lua
 J.CompilationUnit
